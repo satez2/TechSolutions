@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Equipe - TechSolutions</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD5G4WfA08xN+T7A7+P9K9K1yI6rJbM5rN9X6pQ0+b/A4tBw2/1LwA7+G8+2Zg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilo.css"> 
+
+    <style>
+        .bg-tech { 
+            background-color: #007bff; 
+        }
+        .text-tech {
+            color: #007bff;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tech fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">TechSolutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="index.html#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="index.html#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="index.html#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="index.html#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 active" href="#">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="index.html#contato">Contato</a></li>
+                </ul>
+                <ul class="navbar-nav ms-2">
+                    <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="masthead bg-light pt-5 pb-3" style="margin-top: 56px;">
+        <div class="container px-4 text-center">
+            <h1 class="display-3 fw-bold text-tech">👩‍💻 Nossa Equipe de Especialistas</h1>
+            <p class="lead text-muted">Conheça os profissionais que movem a inovação na TechSolutions.</p>
+        </div>
+    </header>
+
+    <section id="team" class="py-5">
+        <div class="container px-4">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100 border-0 shadow team-member text-center p-4">
+                        <img class="mx-auto mb-3" src="img/equipe1.jpg" alt="Foto de João Silva" /> <h4 class="fw-bold">João Silva</h4>
+                        <p class="text-tech fw-bold mb-2">CEO & Fundador</p>
+                        <p class="text-muted small">Visionário em transformação digital com mais de 15 anos de experiência em gestão de projetos de TI.</p>
+                        <a href="#" class="text-tech"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100 border-0 shadow team-member text-center p-4">
+                        <img class="mx-auto mb-3" src="img/equipe2.jpg" alt="Foto de Maria Souza" /> <h4 class="fw-bold">Maria Souza</h4>
+                        <p class="text-tech fw-bold mb-2">Chefe de Cibersegurança</p>
+                        <p class="text-muted small">Especialista em segurança de dados e conformidade (LGPD, GDPR). Mantém nossos clientes protegidos.</p>
+                        <a href="#" class="text-tech"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="card h-100 border-0 shadow team-member text-center p-4">
+                        <img class="mx-auto mb-3" src="img/equipe3.jpg" alt="Foto de Pedro Reis" /> <h4 class="fw-bold">Pedro Reis</h4>
+                        <p class="text-tech fw-bold mb-2">Arquiteto de Nuvem</p>
+                        <p class="text-muted small">Responsável por desenhar e implementar soluções cloud escaláveis e otimizadas em AWS e Azure.</p>
+                        <a href="#" class="text-tech"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark">
+        <div class="container px-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start text-center text-white small">Copyright &copy; TechSolutions 2024</div>
+                <div class="col-lg-3 text-lg-center text-center my-3 my-lg-0">
+                    <a class="text-white mx-2 text-decoration-none small" href="#">Política de Privacidade</a>
+                </div>
+                <div class="col-lg-3 text-lg-end text-center">
+                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

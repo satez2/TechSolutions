@@ -1,0 +1,95 @@
+/*
+ * Arquivo: estilo.css
+ * Tema: TechSolutions - Consultoria em Tecnologia
+ * Cores Principais: Azul (#007bff) e Branco (#ffffff)
+*/
+
+:root {
+    --tech-blue: #007bff;
+    --tech-dark-blue: #0056b3;
+    --tech-light: #f8f9fa;
+    --tech-white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px; /* Para acomodar a navbar fixa */
+}
+
+/* Classes personalizadas para usar as cores-tema */
+.bg-tech { 
+    background-color: var(--tech-blue) !important;
+}
+.text-tech {
+    color: var(--tech-blue) !important;
+}
+.btn-tech {
+    background-color: var(--tech-blue);
+    border-color: var(--tech-blue);
+    color: var(--tech-white);
+    transition: background-color 0.3s ease;
+}
+.btn-tech:hover {
+    background-color: var(--tech-dark-blue);
+    border-color: var(--tech-dark-blue);
+    color: var(--tech-white);
+}
+
+/* Navbar Customização */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Estilo do Acordeon dentro das seções */
+.accordion-button.bg-tech {
+    background-color: var(--tech-dark-blue) !important;
+    color: var(--tech-white);
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--tech-dark-blue);
+    color: var(--tech-white);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+/* Hero Section (Carrossel de Destaque) */
+.hero-text {
+    /* Efeito de sombreamento suave no texto para melhor leitura sobre a imagem */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Cards de Produtos/Serviços */
+.product-card, .team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover, .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Google Maps container (garante que o iFrame ocupe todo o espaço) */
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Rodapé (Social Icons) */
+.btn-social {
+    color: var(--tech-white);
+    border: 1px solid var(--tech-white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    font-size: 1.1rem;
+}
+.btn-social:hover {
+    background-color: var(--tech-blue);
+    border-color: var(--tech-blue);
+    color: var(--tech-white);
+}
