@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Consultoria em Tecnologia</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD5G4WfA08xN+T7A7+P9K9K1yI6rJbM5rN9X6pQ0+b/A4tBw2/1LwA7+G8+2Zg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/estilo.css"> 
+
+    <style>
+        /* Estilos personalizados simples para este exemplo. Devem ir no seu 'css/estilo.css' */
+        .bg-tech { 
+            background-color: #007bff; /* Azul primário do Bootstrap */
+        }
+        .text-tech {
+            color: #007bff;
+        }
+        .btn-tech {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+        .btn-tech:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            color: white;
+        }
+        .hero-section {
+            height: 85vh; /* Altura do cabeçalho */
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o texto */
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+        /* Ajuste do carrossel para preencher a seção Hero */
+        #carouselHeader .carousel-item img {
+            object-fit: cover; 
+            height: 85vh;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tech fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                TechSolutions
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="equipe.html">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3" href="#contato">Contato</a></li>
+                </ul>
+                <ul class="navbar-nav ms-2">
+                    <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead hero-section" id="inicio">
+        <div id="carouselHeader" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active">
+                    <img src="img/destaque1.jpg" class="d-block w-100" alt="Equipe em reunião">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/destaque2.jpg" class="d-block w-100" alt="Servidores e Tecnologia">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/destaque3.jpg" class="d-block w-100" alt="Análise de dados">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        
+        <div class="text-center text-white hero-text">
+            <h1 class="display-3 fw-bold">Bem-vindo à TechSolutions!</h1>
+            <p class="lead mb-4">Inovação e Expertise para o Futuro do seu Negócio.</p>
+            <a class="btn btn-lg btn-tech rounded-pill px-4" href="#sobre">Saiba Mais</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="py-5 bg-light">
+            <div class="container px-4">
+                <div class="row gx-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-4 fw-bold mb-4 text-tech">🚀 Sobre Nós</h2>
+                        <p class="lead mb-4">A TechSolutions é líder em consultoria de TI, dedicada a transformar desafios tecnológicos em oportunidades de crescimento. Nossa missão é oferecer soluções personalizadas que otimizam processos e aumentam a competitividade dos nossos clientes.</p>
+                        <p class="mb-0">Desde 2010, nossa equipe de especialistas tem impulsionado a inovação em diversos setores, com foco em segurança, eficiência e resultados tangíveis.</p>
+                        
+                        <div class="accordion my-4" id="accordionValues">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button bg-tech text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Nossos Valores Fundamentais
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionValues">
+                                    <div class="accordion-body text-start">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check-circle text-tech me-2"></i> <i>Inovação Contínua:</i>  Buscamos sempre a vanguarda tecnológica.</li>
+                                            <li><i class="fas fa-check-circle text-tech me-2"></i> <i>Excelência e Qualidade:</i>  Compromisso com os mais altos padrões.</li>
+                                            <li><i class="fas fa-check-circle text-tech me-2"></i> <i>Foco no Cliente:</i>  Soluções pensadas para o sucesso do seu negócio.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-5">
+            <div class="container px-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold text-tech">🛠️ Nossos Serviços</h2>
+                    <p class="lead">Soluções completas para a sua transformação digital.</p>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-6 mb-5">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <h3 class="fw-bold">Segurança de Dados</h3>
+                                </div>
+                                <p class="card-text text-muted">Implementação de políticas de segurança robustas, testes de penetração e conformidade com a LGPD e regulamentações internacionais.</p>
+                            <div class="text-center">
+                                    <div class="feature bg-tech bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block"><i class="fas fa-shield-alt fa-2x">Lei Geral de Proteção de Dados</i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="accordion" id="accordionServices">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button bg-tech text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Infraestrutura em Nuvem (Cloud)
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionServices">
+                                    <div class="accordion-body text-start">
+                                        <p>Migração e gerenciamento de ambientes cloud (AWS, Azure, Google Cloud). Oferecemos otimização de custos e escalabilidade sob demanda.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <span class="badge text-bg-primary me-2">AWS</span>
+                                            <span class="badge text-bg-primary me-2">Azure</span>
+                                            <span class="badge text-bg-primary">Google Cloud</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-5 bg-light">
+            <div class="container px-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold text-tech">💡 Produtos & Soluções</h2>
+                    <p class="lead">Desenvolvemos ferramentas que potencializam sua operação.</p>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="card product-card h-100 shadow-lg border-0">
+                            <img src="https://www.simbolointeractivo.com/wp-content/uploads/2024/07/tipos-de-crm-caracteristicas-2048x1176.jpg" class="card-img-top" alt="Sistema de CRM"> <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h3 class="fw-bold">CRM Inteligente</h3>
+                                    <p class="text-muted">Gestão de relacionamento com o cliente baseada em IA.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary btn-tech" href="#">Customer Relationship Management</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="card product-card h-100 shadow-lg border-0">
+                            <img src="https://hytek.mx/wp-content/uploads/2020/06/cover.jpg" class="card-img-top" alt="Plataforma de BI"> <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h3 class="fw-bold">Plataforma de BI</h3>
+                                    <p class="text-muted">Dashboards dinâmicos para decisões orientadas a dados.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-primary btn-tech" href="#">Business Intelligence</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="py-5">
+            <div class="container px-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold text-tech">💬 O que dizem nossos Clientes</h2>
+                    <p class="lead">Confiança construída com resultados reais.</p>
+                </div>
+                
+                <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <blockquote class="blockquote text-center p-4 bg-light rounded shadow-sm">
+                                        <p class="mb-0 fst-italic">"A TechSolutions transformou nossa infraestrutura de nuvem, resultando em uma redução de custos de 30% e um aumento notável na segurança. Profissionais de alto nível!"</p>
+                                        <footer class="blockquote-footer mt-2">Ana Paula, <cite title="Fonte do título">CEO da InovaCorp</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <blockquote class="blockquote text-center p-4 bg-light rounded shadow-sm">
+                                        <p class="mb-0 fst-italic">"A consultoria em BI nos deu insights que nunca tivemos antes. Nossas decisões de negócios estão agora totalmente baseadas em dados concretos. Recomendo!"</p>
+                                        <footer class="blockquote-footer mt-2">Bruno Mendes, <cite title="Fonte do título">Diretor de Marketing</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-secondary rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-secondary rounded-circle" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5 bg-tech text-white">
+            <div class="container px-4">
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold">🤝 Fale Conosco</h2>
+                    <p class="lead">Entre em contato e descubra como podemos ajudar sua empresa.</p>
+                </div>
+                <div class="row justify-content-center">
+                    
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h3 class="mb-4">Envie sua Mensagem</h3>
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="nome" type="text" placeholder="Seu nome..." required />
+                                <label for="nome" class="text-dark">Nome Completo</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="nome@exemplo.com" required />
+                                <label for="email" class="text-dark">Endereço de E-mail</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" id="mensagem" placeholder="Sua mensagem aqui..." style="height: 10rem" required></textarea>
+                                <label for="mensagem" class="text-dark">Mensagem</label>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-lg btn-light text-tech fw-bold" id="submitButton" type="submit">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h3 class="mb-4">Nossa Localização</h3>
+                        <div class="map-container" style="height: 400px; border-radius: 0.5rem; overflow: hidden;">
+                             
+
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122870.4047175153!2d-48.04621130273437!3d-15.766993999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3a46ff7ee93f%3A0xaceeb379d23571b7!2sCEUB!5e0!3m2!1spt-BR!2sbr!4v1763406368054!5m2!1spt-BR!2sbr" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 bg-dark">
+        <div class="container px-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start text-center text-white small">Copyright &copy; TechSolutions 2025</div>
+                
+                <div class="col-lg-3 text-lg-center text-center my-3 my-lg-0">
+                    <a class="text-white mx-2 text-decoration-none small" href="#">Política de Privacidade</a>
+                    <a class="text-white mx-2 text-decoration-none small" href="#">Termos de Uso</a>
+                </div>
+                
+                <div class="col-lg-3 text-lg-end text-center">
+                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
